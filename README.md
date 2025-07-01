@@ -10,6 +10,10 @@ This project is a **Stroke Prediction App** built using Streamlit. The app allow
 - Scales input features to match the model's training data.
 - Includes a Jupyter Notebook for model training and evaluation.
 
+## Live Demo
+
+Try the app online: [https://ganthegun-stroke-prediction.streamlit.app/](https://ganthegun-stroke-prediction.streamlit.app/)
+
 ## Dataset
 
 The app uses the [Stroke Prediction Dataset](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset) from Kaggle. The dataset contains health-related parameters such as age, glucose level, BMI, and more.
@@ -64,4 +68,4 @@ The project uses the following Python libraries:
 
 ## License
 
-This project is licensed under
+This project is
