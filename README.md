@@ -68,4 +68,4 @@ The project uses the following Python libraries:
 
 ## License
 
-This project is
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file
