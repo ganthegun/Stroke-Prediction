@@ -8,18 +8,21 @@ st.sidebar.header('User Input Features')
 age = st.sidebar.slider('Age (Year)', 0, 100, 50)
 avg_glucose_level = st.sidebar.slider('Average Glucose Level (mg/dL)', 50, 300, 200)
 bmi = st.sidebar.slider('BMI (kg/m²)', 0, 100, 20)
-work_type = st.sidebar.selectbox('Work Type (Goverment Job)', ('Yes', 'No')) == 'Yes'
-smoking_status = st.sidebar.selectbox('Smoking Status (Unknown)', ('Yes', 'No')) == 'Yes'
+work_type = st.sidebar.selectbox('Work Type (Goverment Job)', ('Yes', 'No'))
+smoking_status = st.sidebar.selectbox('Smoking Status (Unknown)', ('Yes', 'No'))
 
 data = {
     'age': age,  
     'avg_glucose_level': avg_glucose_level,  
     'bmi': bmi,  
-    'work_type_Govt_job': 1 if work_type else 0,
-    'smoking_status_Unknown': 1 if smoking_status else 0,
+    'work_type_Govt_job': work_type,
+    'smoking_status_Unknown': smoking_status
     }
 
 input_df = pd.DataFrame(data, index=[0])
+input_df['work_type_Govt_job'] = input_df['work_type_Govt_job'].map({'Yes': 1, 'No': 0})
+input_df['smoking_status_Unknown'] = input_df['smoking_status_Unknown'].map({'Yes': 1, 'No': 0})
+
 df = pd.read_csv('healthcare-dataset-stroke-data.csv')
 
 cols = ['age', 'avg_glucose_level', 'bmi']
@@ -38,7 +41,7 @@ Data obtained from the [Kaggle](https://www.kaggle.com/datasets/fedesoriano/stro
 
 st.subheader('User Input features')
 
-st.write(input_df)
+st.write(data)
 
 st.subheader('Prediction')
 
