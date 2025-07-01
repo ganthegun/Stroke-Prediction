@@ -8,6 +8,7 @@ This project is a **Stroke Prediction App** built using Streamlit. The app allow
 - Predicts the likelihood of a stroke based on user inputs.
 - Displays prediction probabilities for better understanding.
 - Scales input features to match the model's training data.
+- Includes a Jupyter Notebook for model training and evaluation.
 
 ## Dataset
 
@@ -18,7 +19,7 @@ The app uses the [Stroke Prediction Dataset](https://www.kaggle.com/datasets/fed
 1. Clone the repository:
     ```bash
     git clone https://github.com/ganthegun/Stroke-Prediction.git
-    cd stroke-prediction
+    cd Stroke-Prediction
     ```
 
 2. Set up a virtual environment:
@@ -49,7 +50,7 @@ The app uses the [Stroke Prediction Dataset](https://www.kaggle.com/datasets/fed
 - `healthcare-dataset-stroke-data.csv`: Dataset used for scaling input features.
 - `model.pkl`: Pre-trained machine learning model for stroke prediction.
 - `requirements.txt`: List of dependencies.
-- `.env/`: Virtual environment folder.
+- `training.ipynb`: Jupyter Notebook for model training and evaluation.
 
 ## Dependencies
 
@@ -59,7 +60,8 @@ The project uses the following Python libraries:
 - Scikit-learn
 - NumPy
 - Pandas
+- Jupyter (for running `training.ipynb`)
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under
