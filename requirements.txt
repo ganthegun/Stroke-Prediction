@@ -4,5 +4,4 @@ scikit-learn==1.6.1
 imbalanced-learn==0.13.0
 matplotlib==3.10.3
 streamlit==1.46.1
-# to run locally, install
 ipykernel==6.29.5
