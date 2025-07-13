@@ -12,7 +12,7 @@ This project is a **Stroke Prediction App** built using Streamlit. The app allow
 
 ## Live Demo
 
-Try the app online: [https://ganthegun-stroke-prediction.streamlit.app/](https://ganthegun-stroke-prediction.streamlit.app/)
+Try the app online: [https://stroke-prediction-bf6ysfea4abus8ekihm7ie.streamlit.app/](https://stroke-prediction-bf6ysfea4abus8ekihm7ie.streamlit.app/)
 
 ## Dataset
 
